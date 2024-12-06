@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container1">
+            <header class="head">
+                <nav>
+                    <p>ABINAYA M</p>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class='bx bx-x' onclick="closemenu()"></i>
+                    </ul>
+                    <i class='bx bx-menu' onclick="openmenu()"></i>
+                </nav>
+            </header>
+            <div class="header-text">
+                <p>Hello, It's Me </p>
+                <h1><span>Abinaya M</span></h1>
+                <h3>And I'm a <span class="text"></span></h3>
+            </div>
+            <div class="img-container">
+                <div class="inner">
+                    <img src="IMG1.jpg" alt="image" class="image">
+                </div>
+                <div class="outer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------about--------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span style="color: #0ef;">Me</span></h1>
+                    <p>Dedicated and versatile professional with a Bsc Information Technology
+                        training in Full Stack . I bring a comprehensive skill set to the table.
+                        Proficient in
+                        HTML, CSS, JavaScript, SQL Server,C++, C, JAVA, PYTHON, PROBLEM-SOLVING and PROJECT MANAGEMENT TOOLS, I
+                        thrive on
+                        crafting innovative solutions that leverage cutting-edge technologies. With a passion for
+                        problem-solving and a keen eye for detail, I am committed to delivering high-quality, scalable
+                        web
+                        applications that meet and exceed client expectations. My drive for continuous learning and
+                        adaptability
+                        makes me a valuable asset in any development team.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('technical skills')">Technical Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021-2022</span><br>T.A.M.M Higher Secondary School NATAKKATAIYUR</li>
+                            <li><span>2022-2025</span><br>Bsc Information Technology (Navarasam Arts and Science College) ERODE</li>
+                            <li><span>2023-2024</span><br>Full stack Training pursuing </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical skills">
+                        <div class="Technical-bars">
+                            <div class="bar">
+                                <i style="color: #0078D4;" class="devicon-csharp-plain-wordmark colored"></i>
+                                <div class="info">
+                                    <span>C#,C++</span>
+                                </div>
+                                <div class="progress-line csharp">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <i style="color: #E44D26;" class='bx bxl-html5'></i><i style="color: #264DE4;"
+                                    class='bx bxl-css3'></i><i style="color: #F7DF1E;" class='bx bxl-javascript'></i>
+                                <div class="info">
+                                    <span>HTML, CSS and JavaScript</span>
+                                </div>
+                                <div class="progress-line htmlcssandjavascript">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar"><i style="color: #4E8CFE;"
+                                    class="devicon-microsoftsqlserver-plain colored"></i>
+                                <div class="info">
+                                    <span>SQL Server</span>
+                                </div>
+                                <div class="progress-line sqlserver">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar"><i style="color: #0078D4;"
+                                    class="bx bxl-javascript"></i>&nbsp;<i style="color: #0078D4;"
+                                    class="bx bxl-python"></i>
+                                <div class="info">
+                                    <span>Python,Problem-Solving,Java</span>
+                                </div>
+                                <div class="progress-line aspnetandaspnetcore">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar"><i style="color: #DD0031;" class='bx bxl-angular'></i>
+                                <div class="info">
+                                    <span>Project Management Tools</span>
+                                </div>
+                                <div class="progress-line angular">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services---------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span style="color: #0ef;">Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code bx-rotate-180'></i>
+                    <h2>Frontend Development</h2>
+                    <p>Expertise in crafting dynamic and visually appealing web interfaces using HTML, CSS, and
+                        JavaScript. With a keen eye for design and user experience, I specialize in creating
+                        responsive and interactive frontends that engage users and enhance their browsing
+                        experience.
+                    </p>
+                    <!-- <a href="#" class="read">Learn more</a> -->
+                </div>
+                <div>
+                    <i class='bx bx-data bx-rotate-180'></i>
+                    <h2>Database Management</h2>
+                    <p>Proficient in SQL Server, adept at designing, implementing, and optimizing database
+                        structures to ensure efficient data storage and retrieval. From schema design to query
+                        optimization, I possess the skills to manage complex databases and ensure data integrity and
+                        security.
+                    </p>
+                    <!-- <a href="#" class="read">Learn more</a> -->
+                </div>
+                <!--<div>
+                    <i class='bx bxl-angular bx-flip-horizontal'></i>
+                    <h2>Frontend Frameworks</h2>
+                    <p>Mastery in Angular framework, enabling the creation of dynamic and feature-rich frontend
+                        applications. Leveraging Angular's powerful capabilities, I develop responsive single-page
+                        applications (SPAs) that deliver seamless user experiences across devices, enhancing user
+                        engagement and satisfaction.
+                    </p>
+                    <!-- <a href="#" class="read">Learn more</a> -->
+                </div> -->
+                <!---<div>
+                    <i class='bx bx-globe'></i>
+                    <h2>Web Application Development</h2>
+                    <p>I develop robust and scalable web applications tailored to meet specific business
+                        requirements. With expertise in backend development and API integration, I deliver
+                        high-performance solutions that empower businesses to thrive in the digital landscape.
+                    </p>
+                    <!-- <a href="#" class="read">Learn more</a> -->
+                </div> --->
+                <!---<div>
+                    <i class='bx bx-layer'></i>
+                    <h2>Full Stack .NET Solutions</h2>
+                    <p>Comprehensive expertise across the entire .NET stack, from frontend to backend development,
+                        enabling the delivery of end-to-end solutions. As a full-stack .NET developer, I
+                        proficiently integrate frontend technologies with backend logic, ensuring cohesive and
+                        efficient systems that meet the evolving needs of modern businesses.
+                    </p>
+                    <!-- <a href="#" class="read">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portfolio----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span style="color: #0ef;">Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Crafting a Responsive Portfolio</h3>
+                        <p>Web devlopment using HTML, CSS, and JavaScript, this responsive website highlights my
+                            projects and skills
+                            with elegance. Explore seamlessly adaptable layouts and interactive features tailored for
+                            optimal viewing on any device. Welcome to my digital world! </p>
+
+                        <a href="#"><i class='bx bx-link-external' style="color: #0ef;"></i> </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work4.jpg">
+                    <div class="layer">
+                        <h3>Login & Registration Page</h3>
+                        <p>Developed a responsive login and registration page using HTML, CSS, and JavaScript.
+                            Implemented user authentication and validation features to ensure data security and
+                            user-friendly experience.</p>
+
+                        <a href="Login.html"><i class='bx bx-link-external'
+                                style="color: #0ef;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.png">
+                    <div class="layer">
+                        <h3>Sales Insights for BikeStores</h3>
+                        <p>Analyze BikeStores' sales data using SQL Server, Excel, and Tableau. Key metrics like revenue
+                            and units sold are segmented by categories, stores, and sales reps. Interactive dashboards
+                            in Tableau provide dynamic filtering and detailed insights for strategic decision-making.
+                        </p>
+
+                        <a
+                            href=""><i
+                                class='bx bx-link-external' style="color: #0ef;"></i> </a>
+                    </div>
+                </div>
+            </div>
+            <a href="index2.html" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------contact------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><span style="color: #0ef;">Contact </span>Me</h1>
+                    <p><i class='bx bxl-gmail'></i> </p>
+                    <p><i class='bx bxs-phone'></i> +91 9965942043</p>
+                    <div class="social-icons">
+                        <a href=""><i class='bx bxl-github'></i></a>
+                        <a href=""><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/charming_pappu_135/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://wa.me/9965942043"><i class='bx bxl-whatsapp'></i></a>
+
+                    </div>
+                    <a href="Abi.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="0f279a7b-2f4e-44b8-96cd-9e60a9c42fd5">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Dveloped by Abinaya M <i class='bx bxs-heart'></i> @ 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["Full Stack Dotnet Developer", "Frontend Developer", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true,
+        });
+    </script>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <!--<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzjQ0hMfH8nWDFLzM1Yt-uV-n_ltBUu9r8wYccOLFks4sNZZ89VWPFGTLn9UjraLxzsIw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
